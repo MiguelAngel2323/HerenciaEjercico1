@@ -11,4 +11,17 @@ public class Abogado extends Empleado{
         return super.getSalario() + 10000;
     }
 
+    @Override
+    public int getHoras() {
+        return super.getHoras()+5;
+    }
+
+    @Override
+    public String getMesVacaciones() {
+        return "Julio";
+    }
+
+    public void mostrarMensaje(){
+        System.out.println("Estoy en el tribunal");
+    }
 }
